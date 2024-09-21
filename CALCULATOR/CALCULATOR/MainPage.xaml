@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CALCULATOR.MainPage">
+
+    <StackLayout Padding="20">
+
+        <Frame BackgroundColor="WhiteSmoke" Padding="35" Margin="0, 30, 0, 30">
+            <Label x:Name="LblResult" Text="0" FontSize="60" FontAttributes="Bold" HorizontalOptions="End"></Label>
+        </Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!-- ROW 1-->
+            <Button x:Name="BtnClear"  Clicked="BtnClear_Clicked" Grid.Row="0" Grid.Column="0" Text="C" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <Button x:Name="BtnX" Clicked="BtnX_Clicked" Grid.Row="0" Grid.Column="1" Text="X" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <Button x:Name="BtnPercentage" Clicked="BtnPercentage_Clicked" Grid.Row="0" Grid.Column="2" Text="%" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <Button Clicked="BtnCommonOperation_Clicked" Grid.Row="0" Grid.Column="3" Text="/" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <!-- ROW 2-->
+            <Button x:Name="BtnSeven" Clicked="BtnCommon_Clicked"   Grid.Row="1" Grid.Column="0" Text="7" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <Button x:Name="BtnEight" Clicked="BtnCommon_Clicked" Grid.Row="1" Grid.Column="1" Text="8" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <Button x:Name="BtnNine" Clicked="BtnCommon_Clicked" Grid.Row="1" Grid.Column="2" Text="9" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <Button Clicked="BtnCommonOperation_Clicked" Grid.Row="1" Grid.Column="3" Text="*" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+
+            <!-- ROW 3-->
+            <Button x:Name="BtnFour" Clicked="BtnCommon_Clicked" Grid.Row="2" Grid.Column="0" Text="4" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <Button x:Name="BtnFive" Clicked="BtnCommon_Clicked" Grid.Row="2" Grid.Column="1" Text="5" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <Button x:Name="BtnSix" Clicked="BtnCommon_Clicked" Grid.Row="2" Grid.Column="2" Text="6" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <Button Clicked="BtnCommonOperation_Clicked" Grid.Row="2" Grid.Column="3" Text="-" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+
+            <!-- ROW 4-->
+            <Button x:Name="BtnOne" Clicked="BtnCommon_Clicked" Grid.Row="3" Grid.Column="0" Text="1" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <Button x:Name="BtnTwo" Clicked="BtnCommon_Clicked" Grid.Row="3" Grid.Column="1" Text="2" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <Button x:Name="BtnThree" Clicked="BtnCommon_Clicked" Grid.Row="3" Grid.Column="2" Text="3" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <Button Clicked="BtnCommonOperation_Clicked" Grid.Row="3" Grid.Column="3" Grid.RowSpan="2" Text="+" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+
+            <!-- ROW 5-->
+            <Button Clicked="BtnCommon_Clicked" Grid.Row="4" Grid.Column="0" Text="." FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <Button Clicked="BtnCommon_Clicked" Grid.Row="4" Grid.Column="1" Text="0" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            <Button x:Name="BtnEqual" Clicked="BtnEqual_Clicked" Grid.Row="4" Grid.Column="2" Text="=" FontSize="Large" FontAttributes="Bold" Padding="35"/>
+            
+
+
+        </Grid>
+        
+    </StackLayout>
+    
+
+</ContentPage>
